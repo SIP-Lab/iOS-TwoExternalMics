@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD4EAF2D1EC618980037AD7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EAF2C1EC618980037AD7F /* AppDelegate.swift */; };
+		DD4EAF2F1EC618980037AD7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EAF2E1EC618980037AD7F /* ViewController.swift */; };
+		DD4EAF321EC618980037AD7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4EAF301EC618980037AD7F /* Main.storyboard */; };
+		DD4EAF341EC618980037AD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4EAF331EC618980037AD7F /* Assets.xcassets */; };
+		DD4EAF371EC618980037AD7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4EAF351EC618980037AD7F /* LaunchScreen.storyboard */; };
+		DD4EAF421EC618F50037AD7F /* IOSAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EAF411EC618F50037AD7F /* IOSAudioController.m */; };
+		DD4EAF461EC619E00037AD7F /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = DD4EAF441EC619E00037AD7F /* TPCircularBuffer.c */; };
+		DD4EAF4C1EC6680D0037AD7F /* MovingAverageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EAF4B1EC6680D0037AD7F /* MovingAverageBuffer.m */; };
+		DD5946D71EE5E88D000D340A /* NLMS.c in Sources */ = {isa = PBXBuildFile; fileRef = DD5946D51EE5E88D000D340A /* NLMS.c */; };
+		DD838D661F214B1700D4E4F2 /* UTD_emblem_blk.png in Resources */ = {isa = PBXBuildFile; fileRef = DD838D651F214B1700D4E4F2 /* UTD_emblem_blk.png */; };
+		DDD67F5F1EF870940003E034 /* NoiseReduction.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F5D1EF870940003E034 /* NoiseReduction.c */; };
+		DDD67F7D1EF88CA40003E034 /* abs.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F701EF88CA40003E034 /* abs.c */; };
+		DDD67F7E1EF88CA40003E034 /* bluestein_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F711EF88CA40003E034 /* bluestein_setup.c */; };
+		DDD67F7F1EF88CA40003E034 /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F721EF88CA40003E034 /* fft.c */; };
+		DDD67F801EF88CA40003E034 /* power.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F731EF88CA40003E034 /* power.c */; };
+		DDD67F811EF88CA40003E034 /* rdivide.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F741EF88CA40003E034 /* rdivide.c */; };
+		DDD67F821EF88CA40003E034 /* rt_nonfinite.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F751EF88CA40003E034 /* rt_nonfinite.c */; };
+		DDD67F831EF88CA40003E034 /* rtGetInf.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F761EF88CA40003E034 /* rtGetInf.c */; };
+		DDD67F841EF88CA40003E034 /* rtGetNaN.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F771EF88CA40003E034 /* rtGetNaN.c */; };
+		DDD67F851EF88CA40003E034 /* wienerAB_emxutil.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F781EF88CA40003E034 /* wienerAB_emxutil.c */; };
+		DDD67F861EF88CA40003E034 /* wienerAB_initialize.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F791EF88CA40003E034 /* wienerAB_initialize.c */; };
+		DDD67F871EF88CA40003E034 /* wienerAB_rtwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F7A1EF88CA40003E034 /* wienerAB_rtwutil.c */; };
+		DDD67F881EF88CA40003E034 /* wienerAB_terminate.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F7B1EF88CA40003E034 /* wienerAB_terminate.c */; };
+		DDD67F891EF88CA40003E034 /* wienerAB.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD67F7C1EF88CA40003E034 /* wienerAB.c */; };
+		DDE864D31ECE0F2800E96E99 /* FIRFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = DDE864D11ECE0F2800E96E99 /* FIRFilter.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD4EAF291EC618980037AD7F /* NC-2Ch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC-2Ch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4EAF2C1EC618980037AD7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD4EAF2E1EC618980037AD7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD4EAF311EC618980037AD7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD4EAF331EC618980037AD7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD4EAF361EC618980037AD7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD4EAF381EC618980037AD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4EAF3F1EC618F50037AD7F /* NC-2Ch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NC-2Ch-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD4EAF401EC618F50037AD7F /* IOSAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAudioController.h; sourceTree = "<group>"; };
+		DD4EAF411EC618F50037AD7F /* IOSAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSAudioController.m; sourceTree = "<group>"; };
+		DD4EAF441EC619E00037AD7F /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		DD4EAF451EC619E00037AD7F /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		DD4EAF4A1EC6680D0037AD7F /* MovingAverageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAverageBuffer.h; sourceTree = "<group>"; };
+		DD4EAF4B1EC6680D0037AD7F /* MovingAverageBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAverageBuffer.m; sourceTree = "<group>"; };
+		DD5946D51EE5E88D000D340A /* NLMS.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NLMS.c; sourceTree = "<group>"; };
+		DD5946D61EE5E88D000D340A /* NLMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLMS.h; sourceTree = "<group>"; };
+		DD69352B1ECD01D700E7F820 /* filterCoefficients.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filterCoefficients.h; sourceTree = "<group>"; };
+		DD838D651F214B1700D4E4F2 /* UTD_emblem_blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UTD_emblem_blk.png; sourceTree = "<group>"; };
+		DDD67F5D1EF870940003E034 /* NoiseReduction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NoiseReduction.c; sourceTree = "<group>"; };
+		DDD67F5E1EF870940003E034 /* NoiseReduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseReduction.h; sourceTree = "<group>"; };
+		DDD67F611EF88CA40003E034 /* abs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abs.h; sourceTree = "<group>"; };
+		DDD67F621EF88CA40003E034 /* bluestein_setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bluestein_setup.h; sourceTree = "<group>"; };
+		DDD67F631EF88CA40003E034 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		DDD67F641EF88CA40003E034 /* power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = power.h; sourceTree = "<group>"; };
+		DDD67F651EF88CA40003E034 /* rdivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rdivide.h; sourceTree = "<group>"; };
+		DDD67F661EF88CA40003E034 /* rt_nonfinite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rt_nonfinite.h; sourceTree = "<group>"; };
+		DDD67F671EF88CA40003E034 /* rtGetInf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtGetInf.h; sourceTree = "<group>"; };
+		DDD67F681EF88CA40003E034 /* rtGetNaN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtGetNaN.h; sourceTree = "<group>"; };
+		DDD67F691EF88CA40003E034 /* rtwtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtwtypes.h; sourceTree = "<group>"; };
+		DDD67F6A1EF88CA40003E034 /* wienerAB_emxutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wienerAB_emxutil.h; sourceTree = "<group>"; };
+		DDD67F6B1EF88CA40003E034 /* wienerAB_initialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wienerAB_initialize.h; sourceTree = "<group>"; };
+		DDD67F6C1EF88CA40003E034 /* wienerAB_rtwutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wienerAB_rtwutil.h; sourceTree = "<group>"; };
+		DDD67F6D1EF88CA40003E034 /* wienerAB_terminate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wienerAB_terminate.h; sourceTree = "<group>"; };
+		DDD67F6E1EF88CA40003E034 /* wienerAB_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wienerAB_types.h; sourceTree = "<group>"; };
+		DDD67F6F1EF88CA40003E034 /* wienerAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wienerAB.h; sourceTree = "<group>"; };
+		DDD67F701EF88CA40003E034 /* abs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = abs.c; sourceTree = "<group>"; };
+		DDD67F711EF88CA40003E034 /* bluestein_setup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bluestein_setup.c; sourceTree = "<group>"; };
+		DDD67F721EF88CA40003E034 /* fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fft.c; sourceTree = "<group>"; };
+		DDD67F731EF88CA40003E034 /* power.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = power.c; sourceTree = "<group>"; };
+		DDD67F741EF88CA40003E034 /* rdivide.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rdivide.c; sourceTree = "<group>"; };
+		DDD67F751EF88CA40003E034 /* rt_nonfinite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rt_nonfinite.c; sourceTree = "<group>"; };
+		DDD67F761EF88CA40003E034 /* rtGetInf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtGetInf.c; sourceTree = "<group>"; };
+		DDD67F771EF88CA40003E034 /* rtGetNaN.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtGetNaN.c; sourceTree = "<group>"; };
+		DDD67F781EF88CA40003E034 /* wienerAB_emxutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wienerAB_emxutil.c; sourceTree = "<group>"; };
+		DDD67F791EF88CA40003E034 /* wienerAB_initialize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wienerAB_initialize.c; sourceTree = "<group>"; };
+		DDD67F7A1EF88CA40003E034 /* wienerAB_rtwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wienerAB_rtwutil.c; sourceTree = "<group>"; };
+		DDD67F7B1EF88CA40003E034 /* wienerAB_terminate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wienerAB_terminate.c; sourceTree = "<group>"; };
+		DDD67F7C1EF88CA40003E034 /* wienerAB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wienerAB.c; sourceTree = "<group>"; };
+		DDE864D11ECE0F2800E96E99 /* FIRFilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FIRFilter.c; sourceTree = "<group>"; };
+		DDE864D21ECE0F2800E96E99 /* FIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRFilter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD4EAF261EC618980037AD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD35CB732053357F00F2F46A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD4EAF2C1EC618980037AD7F /* AppDelegate.swift */,
+				DD4EAF331EC618980037AD7F /* Assets.xcassets */,
+				DD4EAF351EC618980037AD7F /* LaunchScreen.storyboard */,
+				DD4EAF381EC618980037AD7F /* Info.plist */,
+				DD838D651F214B1700D4E4F2 /* UTD_emblem_blk.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD35CB742053359000F2F46A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD4EAF3F1EC618F50037AD7F /* NC-2Ch-Bridging-Header.h */,
+				DD4EAF2E1EC618980037AD7F /* ViewController.swift */,
+				DD4EAF301EC618980037AD7F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DD4EAF201EC618980037AD7F = {
+			isa = PBXGroup;
+			children = (
+				DD4EAF2B1EC618980037AD7F /* Noise_Reduction */,
+				DD4EAF2A1EC618980037AD7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD4EAF2A1EC618980037AD7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD4EAF291EC618980037AD7F /* NC-2Ch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4EAF2B1EC618980037AD7F /* Noise_Reduction */ = {
+			isa = PBXGroup;
+			children = (
+				DD35CB742053359000F2F46A /* View */,
+				DDD67F5C1EF86F350003E034 /* Algorithm */,
+				DD4EAF3E1EC618B00037AD7F /* AudioIOCode */,
+				DDD67F601EF88C920003E034 /* MATLAB Coder */,
+				DD35CB732053357F00F2F46A /* Supporting Files */,
+			);
+			path = Noise_Reduction;
+			sourceTree = "<group>";
+		};
+		DD4EAF3E1EC618B00037AD7F /* AudioIOCode */ = {
+			isa = PBXGroup;
+			children = (
+				DD4EAF441EC619E00037AD7F /* TPCircularBuffer.c */,
+				DD4EAF451EC619E00037AD7F /* TPCircularBuffer.h */,
+				DD4EAF401EC618F50037AD7F /* IOSAudioController.h */,
+				DD4EAF411EC618F50037AD7F /* IOSAudioController.m */,
+				DD4EAF4A1EC6680D0037AD7F /* MovingAverageBuffer.h */,
+				DD4EAF4B1EC6680D0037AD7F /* MovingAverageBuffer.m */,
+			);
+			name = AudioIOCode;
+			sourceTree = "<group>";
+		};
+		DDD67F5C1EF86F350003E034 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				DDD67F5D1EF870940003E034 /* NoiseReduction.c */,
+				DDD67F5E1EF870940003E034 /* NoiseReduction.h */,
+				DD5946D51EE5E88D000D340A /* NLMS.c */,
+				DD5946D61EE5E88D000D340A /* NLMS.h */,
+				DD69352B1ECD01D700E7F820 /* filterCoefficients.h */,
+				DDE864D11ECE0F2800E96E99 /* FIRFilter.c */,
+				DDE864D21ECE0F2800E96E99 /* FIRFilter.h */,
+			);
+			name = Algorithm;
+			sourceTree = "<group>";
+		};
+		DDD67F601EF88C920003E034 /* MATLAB Coder */ = {
+			isa = PBXGroup;
+			children = (
+				DDD67F611EF88CA40003E034 /* abs.h */,
+				DDD67F621EF88CA40003E034 /* bluestein_setup.h */,
+				DDD67F631EF88CA40003E034 /* fft.h */,
+				DDD67F641EF88CA40003E034 /* power.h */,
+				DDD67F651EF88CA40003E034 /* rdivide.h */,
+				DDD67F661EF88CA40003E034 /* rt_nonfinite.h */,
+				DDD67F671EF88CA40003E034 /* rtGetInf.h */,
+				DDD67F681EF88CA40003E034 /* rtGetNaN.h */,
+				DDD67F691EF88CA40003E034 /* rtwtypes.h */,
+				DDD67F6A1EF88CA40003E034 /* wienerAB_emxutil.h */,
+				DDD67F6B1EF88CA40003E034 /* wienerAB_initialize.h */,
+				DDD67F6C1EF88CA40003E034 /* wienerAB_rtwutil.h */,
+				DDD67F6D1EF88CA40003E034 /* wienerAB_terminate.h */,
+				DDD67F6E1EF88CA40003E034 /* wienerAB_types.h */,
+				DDD67F6F1EF88CA40003E034 /* wienerAB.h */,
+				DDD67F701EF88CA40003E034 /* abs.c */,
+				DDD67F711EF88CA40003E034 /* bluestein_setup.c */,
+				DDD67F721EF88CA40003E034 /* fft.c */,
+				DDD67F731EF88CA40003E034 /* power.c */,
+				DDD67F741EF88CA40003E034 /* rdivide.c */,
+				DDD67F751EF88CA40003E034 /* rt_nonfinite.c */,
+				DDD67F761EF88CA40003E034 /* rtGetInf.c */,
+				DDD67F771EF88CA40003E034 /* rtGetNaN.c */,
+				DDD67F781EF88CA40003E034 /* wienerAB_emxutil.c */,
+				DDD67F791EF88CA40003E034 /* wienerAB_initialize.c */,
+				DDD67F7A1EF88CA40003E034 /* wienerAB_rtwutil.c */,
+				DDD67F7B1EF88CA40003E034 /* wienerAB_terminate.c */,
+				DDD67F7C1EF88CA40003E034 /* wienerAB.c */,
+			);
+			name = "MATLAB Coder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD4EAF281EC618980037AD7F /* NC-2Ch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4EAF3B1EC618980037AD7F /* Build configuration list for PBXNativeTarget "NC-2Ch" */;
+			buildPhases = (
+				DD4EAF251EC618980037AD7F /* Sources */,
+				DD4EAF261EC618980037AD7F /* Frameworks */,
+				DD4EAF271EC618980037AD7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NC-2Ch";
+			productName = "NC-2Ch";
+			productReference = DD4EAF291EC618980037AD7F /* NC-2Ch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD4EAF211EC618980037AD7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SIPLab;
+				TargetAttributes = {
+					DD4EAF281EC618980037AD7F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 99XC5GW6H9;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD4EAF241EC618980037AD7F /* Build configuration list for PBXProject "Noise_Reduction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD4EAF201EC618980037AD7F;
+			productRefGroup = DD4EAF2A1EC618980037AD7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD4EAF281EC618980037AD7F /* NC-2Ch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD4EAF271EC618980037AD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4EAF371EC618980037AD7F /* LaunchScreen.storyboard in Resources */,
+				DD4EAF341EC618980037AD7F /* Assets.xcassets in Resources */,
+				DD4EAF321EC618980037AD7F /* Main.storyboard in Resources */,
+				DD838D661F214B1700D4E4F2 /* UTD_emblem_blk.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4EAF251EC618980037AD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD67F5F1EF870940003E034 /* NoiseReduction.c in Sources */,
+				DD4EAF2F1EC618980037AD7F /* ViewController.swift in Sources */,
+				DD4EAF421EC618F50037AD7F /* IOSAudioController.m in Sources */,
+				DDD67F801EF88CA40003E034 /* power.c in Sources */,
+				DDD67F841EF88CA40003E034 /* rtGetNaN.c in Sources */,
+				DDD67F811EF88CA40003E034 /* rdivide.c in Sources */,
+				DDD67F871EF88CA40003E034 /* wienerAB_rtwutil.c in Sources */,
+				DDD67F821EF88CA40003E034 /* rt_nonfinite.c in Sources */,
+				DD5946D71EE5E88D000D340A /* NLMS.c in Sources */,
+				DDD67F891EF88CA40003E034 /* wienerAB.c in Sources */,
+				DDD67F861EF88CA40003E034 /* wienerAB_initialize.c in Sources */,
+				DD4EAF461EC619E00037AD7F /* TPCircularBuffer.c in Sources */,
+				DDD67F831EF88CA40003E034 /* rtGetInf.c in Sources */,
+				DDD67F7F1EF88CA40003E034 /* fft.c in Sources */,
+				DDD67F7E1EF88CA40003E034 /* bluestein_setup.c in Sources */,
+				DDD67F881EF88CA40003E034 /* wienerAB_terminate.c in Sources */,
+				DDD67F851EF88CA40003E034 /* wienerAB_emxutil.c in Sources */,
+				DDD67F7D1EF88CA40003E034 /* abs.c in Sources */,
+				DD4EAF2D1EC618980037AD7F /* AppDelegate.swift in Sources */,
+				DD4EAF4C1EC6680D0037AD7F /* MovingAverageBuffer.m in Sources */,
+				DDE864D31ECE0F2800E96E99 /* FIRFilter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD4EAF301EC618980037AD7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4EAF311EC618980037AD7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD4EAF351EC618980037AD7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4EAF361EC618980037AD7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD4EAF391EC618980037AD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD4EAF3A1EC618980037AD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD4EAF3C1EC618980037AD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 99XC5GW6H9;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/Noise_Reduction/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SIPLab.Noise-Reduction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Noise_Reduction/NC-2Ch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DD4EAF3D1EC618980037AD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 99XC5GW6H9;
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = "$(SRCROOT)/Noise_Reduction/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SIPLab.Noise-Reduction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Noise_Reduction/NC-2Ch-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD4EAF241EC618980037AD7F /* Build configuration list for PBXProject "Noise_Reduction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4EAF391EC618980037AD7F /* Debug */,
+				DD4EAF3A1EC618980037AD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4EAF3B1EC618980037AD7F /* Build configuration list for PBXNativeTarget "NC-2Ch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4EAF3C1EC618980037AD7F /* Debug */,
+				DD4EAF3D1EC618980037AD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD4EAF211EC618980037AD7F /* Project object */;
+}
