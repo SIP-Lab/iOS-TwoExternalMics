@@ -14,8 +14,8 @@ All material related to our paper is available via the following links:
 |**Link**|Description
 |:-------|:----------
 |https://ieeexplore.ieee.org/document/8326213| IEEE Manuscript
-|https://www.utdallas.edu/~kehtar/DualMicNoiseReduction.mp4| Video of Adaptive Noise Reduction using 2 external mics on iOS
-|https://www.utdallas.edu/~kehtar/DualMicNoiseClassification.mp4| Video of Background Noise Classification using 2 external mics on iOS
+|www.utdallas.edu/~kehtar/DualMicNoiseReduction.mp4| Video of Adaptive Noise Reduction using 2 external mics on iOS
+|www.utdallas.edu/~kehtar/DualMicNoiseClassification.mp4| Video of Background Noise Classification using 2 external mics on iOS
 
 ## Getting Started
 
