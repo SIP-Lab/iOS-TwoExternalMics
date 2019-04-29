@@ -20,3 +20,10 @@ All material related to our paper is available via the following links:
 ## Getting Started
 
 A [User's Guide](Users-Guide-iOS-TwoExternalMics.pdf) is provided with this project which provides all the description required for running the Adaptive Noise Reduction and Background Noise Classification on iOS Smartphones.
+
+## License and Citation
+The codes are licensed under MIT license.
+
+For any utilization of the code content of this repository, the following paper needs to be cited by the user:
+
+- A. Sehgal, and N. Kehtarnavaz, "Utilization of two microphones for real-time low-latency audio smartphone apps," Proceedings of IEEE International Conference on Consumer Electronics (ICCE), pp. 1-6., 2018.
