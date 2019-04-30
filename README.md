@@ -26,4 +26,4 @@ The codes are licensed under MIT license.
 
 For any utilization of the code content of this repository, the following paper needs to get cited by the user:
 
-- A. Sehgal and N. Kehtarnavaz, "Utilization of two microphones for real-time low-latency audio smartphone apps," Proceedings of IEEE International Conference on Consumer Electronics (ICCE), pp. 1-6, Las Vegas, 2018.
+- A. Sehgal and N. Kehtarnavaz, "Utilization of two microphones for real-time low-latency audio smartphone apps," Proceedings of IEEE International Conference on Consumer Electronics (ICCE), Las Vegas, Jan 2018.
